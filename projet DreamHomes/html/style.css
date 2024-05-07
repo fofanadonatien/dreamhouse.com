@@ -1,0 +1,300 @@
+.main-containers {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main-container {
+    background-image: url('images/imageprincipale.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+main {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+main p {
+    color: white;
+    font-size: 18px;
+    margin-top: 0;
+}
+.filter-bar {
+    text-align: center;
+    margin-top: 20px;
+}
+   
+  .filter-bar select, .filter-bar input, .filter-bar button {
+    padding: 10px;
+    margin-right: 10px;
+}
+   
+  .filter-bar button {
+    background-color: #053607;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+   
+  .filter-bar button:hover {
+    background-color: #45a049;
+}
+
+.footer-clean {
+    padding:50px 0;
+    background-color:#031f0b;
+    color:#fcfcfc;
+}
+  
+  .footer-clean h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+}
+
+.logos img {
+    width: 200px;
+    height: auto;
+}
+  .footer-clean ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+}
+  
+  .footer-clean ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+}
+  
+  .footer-clean ul a:hover {
+    opacity:1;
+}
+  
+  .footer-clean .item.social {
+    text-align:right;
+}
+  
+  @media (max-width:767px) {
+    .footer-clean .item {
+      text-align:center;
+      padding-bottom:20px;
+    }
+}
+  
+  @media (max-width: 768px) {
+    .footer-clean .item.social {
+      text-align:center;
+    }
+}
+  
+  .footer-clean .item.social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin-left:10px;
+    margin-top:22px;
+    color:inherit;
+    opacity:0.75;
+}
+  
+  .footer-clean .item.social > a:hover {
+    opacity:0.9;
+}
+  
+  @media (max-width:991px) {
+    .footer-clean .item.social > a {
+      margin-top:40px;
+    }
+}
+  
+  @media (max-width:767px) {
+    .footer-clean .item.social > a {
+      margin-top:10px;
+    }
+}
+  
+  .footer-clean .copyright {
+    margin-top:14px;
+    margin-bottom:0;
+    font-size:13px;
+    opacity:0.6;
+}
+    
+#map-section {
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    background-color: #f0f0f0; /* Optional background color */
+    margin: 0;
+    padding: 0;
+}
+  
+.appartements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: 20px auto;
+    max-width: 1100px;
+}
+
+.appartement {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #180a0a;
+    border-radius: 5px;
+}
+
+.appartement img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.appartement h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.appartement p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.appartement .icon {
+    margin-right: 5px;
+    font-size: 20px;
+}
+.appartement img:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .appartement {
+      width: calc(33.333% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .appartement {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .appartement {
+      width: 100%;
+    }
+  }
+
+.actions {
+    margin-top: 10px;
+}
+
+/* Ajoutez des styles pour les différentes icônes ici */
+.icon.like:before {
+    content: "\2764";
+}
+
+.icon.comment:before {
+    content: "\1F4AC";
+}
+
+.icon.share:before {
+    content: "\1F4E5";
+}
+
+.icon.euro:before {
+    content: "\20AC";
+}
+.annoncecollectif {
+    margin: 0;
+    padding: 0;
+}
+  .textexplo {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.paginations {
+    display: flex;
+    justify-content: center;
+    
+}
+.pagination {
+    clear: both;
+    text-align: center;
+    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.pagination a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #033212;
+    border: 1px solid #ccc;
+    margin: 0 3px;
+    text-decoration: none;
+    color: #e9edeb;
+    line-height: 30px;
+}
+.pagination a.active {
+    background-color: #ccc;
+}

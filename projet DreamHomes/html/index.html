@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DreamHouse</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="../85741c8f-7251-483f-89b5-be2eb4dac4b7.jpg"
+    />
+  </head>
+  <body>
+    <div class="main-containers">
+      <div class="main-container">
+        <header>
+          <div>
+            <a href="#" class="logo">
+              <span>
+                <img src="images/logo.png" alt="image" />
+              </span>
+            </a>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#">Accueil</a></li>
+              <li><a href="#">Annonce</a></li>
+              <li><a href="#">Nos services</a></li>
+              <li><a href="#">L'agence</a></li>
+              <li><a href="#">Contacts</a></li>
+              <li>
+                <a href="#"><i class="icon ion-social-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon ion-social-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon ion-social-snapchat"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon ion-social-instagram"></i></a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <main>
+          <h1>Agence Immobilière</h1>
+          <p>Avec vous, pour vous , partout</p>
+          <!-- Barre de filtre -->
+          <div class="filter-bar">
+            <select name="type" id="type">
+              <option value="">Type de propriété</option>
+              <option value="maison">Maison</option>
+              <option value="appartement">Appartement</option>
+              <option value="terrain">Terrain</option>
+              <!-- Ajouter d'autres options au besoin -->
+            </select>
+            <input type="text" placeholder="Localisation" />
+            <button>Rechercher</button>
+          </div>
+        </main>
+      </div>
+    </div>
+    <section id="map-section">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.893564647416!2d-74.00597218573429!3d40.71277564633485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598e85f52293%3A0x54dfabed4e1f9eeb!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2suk!4v1645481803704!5m2!1sen!2suk"
+        width="100%"
+        height="100%"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+    <section>
+      <div class="annoncecollectif">
+        <h2 class="textexplo">
+          Explorer l'Afrique avec les superbes résidences
+        </h2>
+      </div>
+      <section class="appartements">
+        <div class="appartement">
+          <img src="images/1.jpg" alt="Appartement 1" />
+          <h3>Appartement</h3>
+          <p>
+            Descriptif en vente: Magnifique appartement situé en centre-ville.
+          </p>
+          <p>Pays: France</p>
+          <p>Prix: 200 000 €</p>
+          <div class="actions">
+            <!-- Icônes pour J'aime, Commentaire et Partager -->
+            <span
+              ><i class="fas fa-heart" onclick="toggleLike(this)"></i
+              ><span id="likeCount1"> 25</span></span
+            >
+            <span
+              ><i class="fas fa-comment"></i
+              ><input type="text" placeholder="Votre commentaire" /> 10</span
+            >
+            <span>
+              <i class="fas fa-share"></i>
+              <!-- Liens de partage -->
+              <a
+                href="https://www.facebook.com/sharer.php?u=https://www.example.com"
+                target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://www.snapchat.com/" target="_blank"
+                ><i class="fab fa-snapchat"></i
+              ></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/shareArticle?url=https://www.example.com"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </span>
+          </div>
+        </div>
+        <div class="appartement">
+          <img src="images/pexels-pixabay-271624.jpg" alt="Appartement 1" />
+          <h3>Appartement</h3>
+          <p>
+            Descriptif en vente: Magnifique appartement situé en centre-ville.
+          </p>
+          <p>Pays: France</p>
+          <p>Prix: 200 000 €</p>
+          <div class="actions">
+            <!-- Icônes pour J'aime, Commentaire et Partager -->
+            <span
+              ><i class="fas fa-heart" onclick="toggleLike(this)"></i
+              ><span id="likeCount1"> 25</span></span
+            >
+            <span
+              ><i class="fas fa-comment"></i
+              ><input type="text" placeholder="Votre commentaire" /> 10</span
+            >
+            <span>
+              <i class="fas fa-share"></i>
+              <!-- Liens de partage -->
+              <a
+                href="https://www.facebook.com/sharer.php?u=https://www.example.com"
+                target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://www.snapchat.com/" target="_blank"
+                ><i class="fab fa-snapchat"></i
+              ></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/shareArticle?url=https://www.example.com"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </span>
+          </div>
+        </div>
+        <div class="appartement">
+          <img
+            src="images/pexels-vecislavas-popa-1571460.jpg"
+            alt="Appartement 1"
+          />
+          <h3>Appartement</h3>
+          <p>
+            Descriptif en vente: Magnifique appartement situé en centre-ville.
+          </p>
+          <p>Pays: France</p>
+          <p>Prix: 200 000 €</p>
+          <div class="actions">
+            <!-- Icônes pour J'aime, Commentaire et Partager -->
+            <span
+              ><i class="fas fa-heart" onclick="toggleLike(this)"></i
+              ><span id="likeCount1"> 25</span></span
+            >
+            <span
+              ><i class="fas fa-comment"></i
+              ><input type="text" placeholder="Votre commentaire" /> 10</span
+            >
+            <span>
+              <i class="fas fa-share"></i>
+              <!-- Liens de partage -->
+              <a
+                href="https://www.facebook.com/sharer.php?u=https://www.example.com"
+                target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://www.snapchat.com/" target="_blank"
+                ><i class="fab fa-snapchat"></i
+              ></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/shareArticle?url=https://www.example.com"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </span>
+          </div>
+        </div>
+        <div class="appartement">
+          <img src="images/2.jpg" alt="Appartement 1" />
+          <h3>Appartement</h3>
+          <p>
+            Descriptif en vente: Magnifique appartement situé en centre-ville.
+          </p>
+          <p>Pays: France</p>
+          <p>Prix: 200 000 €</p>
+          <div class="actions">
+            <!-- Icônes pour J'aime, Commentaire et Partager -->
+            <span
+              ><i class="fas fa-heart" onclick="toggleLike(this)"></i
+              ><span id="likeCount1"> 25</span></span
+            >
+            <span
+              ><i class="fas fa-comment"></i
+              ><input type="text" placeholder="Votre commentaire" /> 10</span
+            >
+            <span>
+              <i class="fas fa-share"></i>
+              <!-- Liens de partage -->
+              <a
+                href="https://www.facebook.com/sharer.php?u=https://www.example.com"
+                target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://www.snapchat.com/" target="_blank"
+                ><i class="fab fa-snapchat"></i
+              ></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/shareArticle?url=https://www.example.com"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </span>
+          </div>
+        </div>
+        <div class="appartement">
+          <img src="images/3.jpg" alt="Appartement 1" />
+          <h3>Appartement</h3>
+          <p>
+            Descriptif en vente: Magnifique appartement situé en centre-ville.
+          </p>
+          <p>Pays: France</p>
+          <p>Prix: 200 000 €</p>
+          <div class="actions">
+            <!-- Icônes pour J'aime, Commentaire et Partager -->
+            <span
+              ><i class="fas fa-heart" onclick="toggleLike(this)"></i
+              ><span id="likeCount1"> 25</span></span
+            >
+            <span
+              ><i class="fas fa-comment"></i
+              ><input type="text" placeholder="Votre commentaire" /> 10</span
+            >
+            <span>
+              <i class="fas fa-share"></i>
+              <!-- Liens de partage -->
+              <a
+                href="https://www.facebook.com/sharer.php?u=https://www.example.com"
+                target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://www.snapchat.com/" target="_blank"
+                ><i class="fab fa-snapchat"></i
+              ></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/shareArticle?url=https://www.example.com"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </span>
+          </div>
+        </div>
+        <div class="appartement">
+          <img src="images/pexels-pixabay-280232.jpg" alt="Appartement 1" />
+          <h3>Appartement</h3>
+          <p>
+            Descriptif en vente: Magnifique appartement situé en centre-ville.
+          </p>
+          <p>Pays: France</p>
+          <p>Prix: 200 000 €</p>
+          <div class="actions">
+            <!-- Icônes pour J'aime, Commentaire et Partager -->
+            <span
+              ><i class="fas fa-heart" onclick="toggleLike(this)"></i
+              ><span id="likeCount1"> 25</span></span
+            >
+            <span
+              ><i class="fas fa-comment"></i
+              ><input type="text" placeholder="Votre commentaire" /> 10</span
+            >
+            <span>
+              <i class="fas fa-share"></i>
+              <!-- Liens de partage -->
+              <a
+                href="https://www.facebook.com/sharer.php?u=https://www.example.com"
+                target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://www.snapchat.com/" target="_blank"
+                ><i class="fab fa-snapchat"></i
+              ></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/shareArticle?url=https://www.example.com"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </span>
+          </div>
+        </div>
+        <div class="appartement">
+          <img src="images/pexels-pixabay-276554.jpg" alt="Appartement 1" />
+          <h3>Appartement</h3>
+          <p>
+            Descriptif en vente: Magnifique appartement situé en centre-ville.
+          </p>
+          <p>Pays: France</p>
+          <p>Prix: 200 000 €</p>
+          <div class="actions">
+            <!-- Icônes pour J'aime, Commentaire et Partager -->
+            <span
+              ><i class="fas fa-heart" onclick="toggleLike(this)"></i
+              ><span id="likeCount1"> 25</span></span
+            >
+            <span
+              ><i class="fas fa-comment"></i
+              ><input type="text" placeholder="Votre commentaire" /> 10</span
+            >
+            <span>
+              <i class="fas fa-share"></i>
+              <!-- Liens de partage -->
+              <a
+                href="https://www.facebook.com/sharer.php?u=https://www.example.com"
+                target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://www.snapchat.com/" target="_blank"
+                ><i class="fab fa-snapchat"></i
+              ></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/shareArticle?url=https://www.example.com"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </span>
+          </div>
+        </div>
+        <div class="appartement">
+          <img src="images/pexels-pixabay-259580.jpg" alt="Appartement 1" />
+          <h3>Appartement</h3>
+          <p>
+            Descriptif en vente: Magnifique appartement situé en centre-ville.
+          </p>
+          <p>Pays: France</p>
+          <p>Prix: 200 000 €</p>
+          <div class="actions">
+            <!-- Icônes pour J'aime, Commentaire et Partager -->
+            <span
+              ><i class="fas fa-heart" onclick="toggleLike(this)"></i
+              ><span id="likeCount1"> 25</span></span
+            >
+            <span
+              ><i class="fas fa-comment"></i
+              ><input type="text" placeholder="Votre commentaire" /> 10</span
+            >
+            <span>
+              <i class="fas fa-share"></i>
+              <!-- Liens de partage -->
+              <a
+                href="https://www.facebook.com/sharer.php?u=https://www.example.com"
+                target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://www.snapchat.com/" target="_blank"
+                ><i class="fab fa-snapchat"></i
+              ></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/shareArticle?url=https://www.example.com"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </span>
+          </div>
+        </div>
+        <div class="appartement">
+          <img
+            src="images/pexels-freemockupsorg-775219.jpg"
+            alt="Appartement 1"
+          />
+          <h3>Appartement</h3>
+          <p>
+            Descriptif en vente: Magnifique appartement situé en centre-ville.
+          </p>
+          <p>Pays: France</p>
+          <p>Prix: 200 000 €</p>
+          <div class="actions">
+            <!-- Icônes pour J'aime, Commentaire et Partager -->
+            <span
+              ><i class="fas fa-heart" onclick="toggleLike(this)"></i
+              ><span id="likeCount1"> 25</span></span
+            >
+            <span
+              ><i class="fas fa-comment"></i
+              ><input type="text" placeholder="Votre commentaire" /> 10</span
+            >
+            <span>
+              <i class="fas fa-share"></i>
+              <!-- Liens de partage -->
+              <a
+                href="https://www.facebook.com/sharer.php?u=https://www.example.com"
+                target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://www.snapchat.com/" target="_blank"
+                ><i class="fab fa-snapchat"></i
+              ></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/shareArticle?url=https://www.example.com"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </span>
+          </div>
+        </div>
+      </section>
+      <div class="paginations">
+        <!-- Pagination -->
+        <div class="pagination">
+          <a href="#">&laquo; Précédent</a>
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">Suivant &raquo;</a>
+        </div>
+      </div>
+    </section>
+    <div class="footer-clean">
+      <footer>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="logos">
+              <img src="images/logo.png" alt="Logo" />
+            </div>
+            <div class="col-sm-4 col-md-3 item">
+              <h3>À propos</h3>
+              <ul>
+                <li><a href="#">Qui sommes-nous ?</a></li>
+                <li><a href="#">Nous contacter</a></li>
+                <li><a href="#">Nous rejoindre</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 item">
+              <h3>À découvrir</h3>
+              <ul>
+                <li><a href="#">Tout l'immobilier</a></li>
+                <li><a href="#">Annuaire des agences</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 item">
+              <h3>Informations légales</h3>
+              <ul>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">Politique de confidentialité</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 item social">
+              <a href="#"><i class="icon ion-social-facebook"></i></a
+              ><a href="#"><i class="icon ion-social-linkedin"></i></a
+              ><a href="#"><i class="icon ion-social-snapchat"></i></a
+              ><a href="#"><i class="icon ion-social-instagram"></i></a>
+              <p class="copyright">WebMaster © 2024</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  </body>
+  <script>
+    function toggleLike(element) {
+      element.classList.toggle("fas");
+      element.classList.toggle("far");
+      var likeCountElement = element.nextElementSibling;
+      var likeCount = parseInt(likeCountElement.textContent);
+      if (element.classList.contains("fas")) {
+        likeCount--;
+      } else {
+        likeCount++;
+      }
+      likeCountElement.textContent = likeCount;
+    }
+
+    function shareOnSocialMedia(platform) {
+      alert("Partage sur " + platform);
+    }
+  </script>
+</html>
